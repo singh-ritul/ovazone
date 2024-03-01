@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overall.css">
+    <link rel="stylesheet" href="responsive.css">
+<head>
+    <title>Analog Clock</title>
+    <style>
+
+.mainn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background-color: black;
+    color: aliceblue;
+}
+.hea{
+    margin-bottom: 50px;
+}
+
+
+.container{
+    position: absolute;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hand i{
+    position: absolute;
+    background-color: var(--clr);
+    width: 4px;
+    height: 70px;
+    border-radius: 8px;
+
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <section style="color:blue;">OvA</section>
+                <section style="color:black;">ZonE</section>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="searchbar">
+                <p><input type="text" name="search" id="search" placeholder="Search Here"></p>
+                <button id="btn">search</button>
+            </div>
+
+            <div class="login">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </nav>
+
+    </header>
+    
+    <div class="mainn">
+        <div class="hea">
+        </div>
+        <div class="container">
+
+            <div class="clock">
+                <div style="--clr:red;" id="hour" class="hand"><i></i></div>
+                <div style="--clr:yellow;" 
+                id="min" class="hand"><i></i></div>
+                <div style="--clr:white;" id="sec" class="hand"><i></i></div>
+
+                <span style="--i:1;"><b>1</b></span>
+                <span style="--i:2;"><b>2</b></span>
+                <span style="--i:3;"><b>3</b></span>
+                <span style="--i:4;"><b>4</b></span>
+                <span style="--i:5;"><b>5</b></span>
+                <span style="--i:6;"><b>6</b></span>
+                <span style="--i:7;"><b>7</b></span>
+                <span style="--i:8;"><b>8</b></span>
+                <span style="--i:9;"><b>9</b></span>
+                <span style="--i:10;"><b>10</b></span>
+                <span style="--i:11;"><b>11</b></span>
+                <span style="--i:12;"><b>12</b></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        let hr = document.getElementById('hour');
+let min = document.getElementById('min');
+let sec = document.getElementById('sec');
+
+function displayTime(){
+    let date = new Date();
+
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
+
+    let hRotation = 30*hh + mm/2;
+    let mRotation = 6*mm;
+    let sRotation = 6*ss;
+
+    hr.style.transform = `rotate(${hRotation}deg)`;
+    min.style.transform = `rotate(${mRotation}deg)`;
+    sec.style.transform = `rotate(${sRotation}deg)`;
+
+
+
+}
+setInterval(displayTime,1000);
+    </script>
+
+
+ <!-- footer started -->
+ <footer>
+    <div class="confoot">
+        <div class="footer">
+            <div class="linkfoot">
+                <h3>Useful Links</h3>
+                <div class="linkcoupons">
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Membership</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="linkfoot">
+                <h3>Follow Us On</h3>
+                <div class="socialmedia">
+                    <ul>
+                        <a href="">
+                            <li>Facebook</li>
+                        </a>
+                        <a href="">
+                            <li>Instagram</li>
+                        </a>
+                        <a href="">
+                            <li>Twitter</li>
+                        </a>
+                        <a href="">
+                            <li>Telegram</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="linkfoot">
+
+                <div class="appfoot">
+                    <h3>Download Our App</h3>
+                    <p class="textCenter margin1">Download app for Android and IOS</p>
+                    <img src="googleplay.jpg" alt="android">
+                    <img src="appstore.png" alt="IOS">
+                </div>
+            </div>
+
+            <div class="linkfoot">
+
+                <div class="logofoot">
+                    <a href="index.html" class="logoo">
+                        <section style="color:blue;">OvA</section>
+                        <section style="color:black;">ZonE</section>
+                    </a>
+                    <div class="parfoot">
+                        <p lass="textCenter margin1">You Can Visit</p>
+                        <p lass="textCenter margin1">info@ovazone.com</p>
+                        <p lass="textCenter margin1">bangalore-19,Karnataka</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="copy">
+            <p>CopyRights &copy; <span style="color:blue;">OvA</span><span style="color:black;">ZonE</span> All
+                Rights Deserve; </p>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+</body>
+
+</html>

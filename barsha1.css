@@ -1,0 +1,89 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: var(--main--bg--color);
+    /*align-items: center;
+    display: flex;*/
+}
+.title{
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.cover{
+    justify-content: space-between;
+    width: 800px;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+}
+.box{
+    margin-left: 20px;
+    margin: 15px;
+    width:800px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.91)
+}
+.box a img {
+    width: 250px;
+    height: 200px;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.topsell{
+    margin-top: 75px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+.innerbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.box:hover .innerbox{
+    display: block;
+}
+.cover .box .btn button{
+    width:100%;
+    background: wheat;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.91)
+}
+.cover .box .btn:hover{
+    border:0.5px solid black;
+}
+img {
+    width: 250px;
+    height: 200px;
+}
+.others{
+    margin-top: 90px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+.cover1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box1{
+    margin-left: 30px;
+    text-align: center;
+}
+.box1 img{
+    margin-top: 15px;
+    height: 250px;
+    width: 275px;
+    border-radius: 50%;
+}

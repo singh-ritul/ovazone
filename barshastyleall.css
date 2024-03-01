@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main--bg--color);
+    width:100%;
+    height: 56vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.container .card{
+    margin: 10px;
+    margin-left: 61px;
+    width: 270px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgba(0 0 0 0);
+}
+
+.container .card .prod_image{
+    width: 250px;
+   /* margin: 20px auto;*/
+}
+.container .card .prod_image img{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+.container .card .prod_info{
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.container .card .btn button{
+    width:100%;
+    background: rgba(172, 255, 47, 0.278);
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+ i{
+    color:red;
+}
+.container1{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.container .card .btn:hover{
+    border: 0.5px solid black;
+    transform: scale(1.1);
+}
+.container1 .card{
+    margin: 10px;
+    margin-left: 61px;
+    width: 270px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgba(0 0 0 0);
+}
+.container1 .card .prod_image{
+    width: 250px;
+   /* margin: 20px auto;*/
+}
+.container1 .card .prod_image img{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+.container1 .card .prod_info{
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.container1 .card .btn button{
+    width:100%;
+    background: rgba(172, 255, 47, 0.278);
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.container1 .card .btn:hover{
+    border: 0.5px solid black;
+    transform: scale(1.1);
+}
+.container2{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.container2 .card{
+    margin: 10px;
+    margin-left: 61px;
+    width: 270px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgba(0 0 0 0);
+}
+.container2 .card .prod_image{
+    width: 250px;
+   /* margin: 20px auto;*/
+}
+.container2 .card .prod_image img{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+.container2 .card .prod_info{
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.container2 .card .btn button{
+    width:100%;
+    background: rgba(172, 255, 47, 0.278);
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.container2 .card .btn:hover{
+    border: 0.5px solid black;
+    transform: scale(1.1);
+}
+

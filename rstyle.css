@@ -1,0 +1,138 @@
+/* 
+body{
+ background-color: #A8DF8E;
+} */
+/* .main{
+	justify-content: space-between;
+    width: 800px;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 0px;
+    position: fixed;
+} */
+/* .cover {
+    justify-content: space-between;
+    width: 800px;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 0px;
+    position: fixed;
+} */
+/* section{
+	padding: 2rem;
+} */
+
+
+/* .image{
+	position: fixed;
+	margin-top:-10x;
+	margin-left:20px;
+	width: 150px;
+	height: auto;
+	border-radius: 50%;
+} */
+/* div p.a{
+	font-size:45px;
+	position:relative;
+	left:200px;
+	float:left;
+	text-decoration: underline;
+}
+div p.b{
+	position: relative;
+	top:30px;
+	display:block;
+	margin-block-start: 1.5em;
+	margin-inline-start: 0px;
+	margin-inline-start:0px ;
+} */
+/* 
+.maindiv{
+	width: 100%;
+	height:70%;
+	position: absolute;
+	left: 50%;
+	top:62%;
+	transform: translate(-50%,-50%);
+	background-image: url('https://www.thespruce.com/thmb/d6mlSpKxdAIaOQBaUDH0S6A3e_k=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-grow-monstera-deliciosa-5072671-01-a65286b8b3b8402882c7ad2c57756bbe.jpg');
+	background-size: 100% 100%;
+	box-shadow: 1px 2px 10px 5px white;
+	margin-right: 2px;
+	animation: slider 8s infinite linear;
+}
+@keyframes slider{
+	0%{ background-image:url('https://www.thespruce.com/thmb/d6mlSpKxdAIaOQBaUDH0S6A3e_k=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-grow-monstera-deliciosa-5072671-01-a65286b8b3b8402882c7ad2c57756bbe.jpg');}
+	25%{background-image: url('https://www.thespruce.com/thmb/zS9VQKs_IJPOqCJVk_W0RUILdGU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pink-princess-philodendron-care-guide-5204202-hero-27ce77aead32426bbbd6be9bce896b8b.jpg');}
+	75%{background-image: url('https://plantzone.in/wp-content/uploads/2023/02/41.jpg');}
+	100%{background-image: url('https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/1/5/0/CI_Costa-Farms_Spathiphyllum-Sensation.jpg.rend.hgtvcom.616.616.suffix/1515164846613.jpeg');}
+} */
+
+
+
+
+/* slider */
+
+
+.container{
+    padding: 2em;
+}
+
+.slider-wrap {
+    position: relative;
+    max-width: 46rem;
+    margin-left: 30vh;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    aspect-ratio: 20/12;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 5px 3px 5px 7px gray;
+    border-radius: 15px;
+	height: 500px;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: center;
+    object-fit: cover;
+    width:700px;
+    height: 600px;
+    
+
+}
+.slider a{
+    margin: 10px 50px 0px 90px;
+    display: flex;
+    align-items: flex-start;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+/* sliderend */

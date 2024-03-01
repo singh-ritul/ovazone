@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overall.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        .centerr {
+            text-align: center;
+        }
+
+        .bg-pink {
+            background-color: rgb(107, 124, 112);
+        }
+
+        .calcc {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border: 2px solid blue;
+            border-radius: 15px;
+
+        }
+
+        .buton,
+        .operator {
+            padding: 20px;
+            margin: 0 4px;
+            border: 2px solid rgb(77, 255, 0);
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .row {
+            margin: 9px 10px;
+        }
+
+        .marg {
+            margin-left: 4px;
+        }
+
+        .row input {
+            padding: 5px 0px;
+            border: 2px solid rgb(77, 255, 0);
+            border-radius: 9px;
+            font-size: 25px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <section style="color:blue;">OvA</section>
+                <section style="color:black;">ZonE</section>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="searchbar">
+                <p><input type="text" name="search" id="search" placeholder="Search Here"></p>
+                <button id="btn">search</button>
+            </div>
+
+            <div class="login">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="calcc">
+        <h1 class="centerr">CalculatoR</h1>
+        <div class="container bg-pink margin-auto flex">
+
+            <div class="row">
+                <input class="input" type="text" id="inputbox">
+            </div>
+            <div class="row">
+                <button class="operator">C</button>
+                <button class="operator">()</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>
+            </div>
+            <div class="marg">
+                <div class="row">
+                    <button class="buton">7</button>
+                    <button class="buton">8</button>
+                    <button class="buton">9</button>
+                    <button class="operator">*</button>
+                </div>
+                <div class="row">
+                    <button class="buton">4</button>
+                    <button class="buton">5</button>
+                    <button class="buton">6</button>
+                    <button class="operator">-</button>
+                </div>
+                <div class="row">
+                    <button class="buton">1</button>
+                    <button class="buton">2</button>
+                    <button class="buton">3</button>
+                    <button class="operator">+</button>
+                </div>
+
+            </div>
+            <div class="row">
+                <button class="operator">DL</button>
+                <button class="operator">0</button>
+                <button class="operator">.</button>
+                <button class="operator">=</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let input = document.getElementById('inputbox');
+        let buttons = document.querySelectorAll('button');
+        let string = "";
+        let arr = Array.from(buttons);
+        arr.forEach(button => {
+            button.addEventListener('click', (e) => {
+                if (e.target.innerHTML == '=') {
+                    string = eval(string);
+                    input.value = string;
+                }
+                else if (e.target.innerHTML == 'C') {
+                    string = "";
+                    input.value = string;
+                }
+                else if (e.target.innerHTML == 'DL') {
+                    string = string.substring(0, string.length - 1);
+                    input.value = string;
+                }
+                else {
+                    string += e.target.innerHTML;
+                    input.value = string;
+                }
+            })
+        })
+    </script>
+
+
+
+    <!-- footer started -->
+    <footer>
+        <div class="confoot">
+            <div class="footer">
+                <div class="linkfoot">
+                    <h3>Useful Links</h3>
+                    <div class="linkcoupons">
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Membership</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="linkfoot">
+                    <h3>Follow Us On</h3>
+                    <div class="socialmedia">
+                        <ul>
+                            <a href="">
+                                <li>Facebook</li>
+                            </a>
+                            <a href="">
+                                <li>Instagram</li>
+                            </a>
+                            <a href="">
+                                <li>Twitter</li>
+                            </a>
+                            <a href="">
+                                <li>Telegram</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="linkfoot">
+
+                    <div class="appfoot">
+                        <h3>Download Our App</h3>
+                        <p class="textCenter margin1">Download app for Android and IOS</p>
+                        <img src="googleplay.jpg" alt="android">
+                        <img src="appstore.png" alt="IOS">
+                    </div>
+                </div>
+
+                <div class="linkfoot">
+
+                    <div class="logofoot">
+                        <a href="index.html" class="logoo">
+                            <section style="color:blue;">OvA</section>
+                            <section style="color:black;">ZonE</section>
+                        </a>
+                        <div class="parfoot">
+                            <p lass="textCenter margin1">You Can Visit</p>
+                            <p lass="textCenter margin1">info@ovazone.com</p>
+                            <p lass="textCenter margin1">bangalore-19,Karnataka</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="copy">
+                <p>CopyRights &copy; <span style="color:blue;">OvA</span><span style="color:black;">ZonE</span> All
+                    Rights Deserve; </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>

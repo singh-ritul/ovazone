@@ -1,0 +1,63 @@
+@media screen and (max-width:900px){
+    nav{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: -50px;
+    }
+    .background img{
+        margin: 90px 10px 0px 40px
+    }
+    .logo{
+        width: 20px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+    /* footer */
+
+   .contfoot{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+
+
+   .parfoot{
+    margin: -70px 0px 1px 23px;
+   }
+   .logofoot img{
+    height: 222px;
+    margin: 1px 20px 1px -17px;
+   }
+   .appfoot img{
+    width: 160px;
+    margin-bottom: 11px;
+    margin-left: 70px;
+   }
+   .appfoot p{
+    margin: -38px 0px 29px 170px;
+    font-size: 16px;
+   }
+   .appfoot h3{
+    margin: 0px 6px 46px 215px;
+    font-size: 14px
+   }
+
+   .copyright{
+    margin: 15px 0px 15px 0px;
+    font-size: 15px;
+
+   }
+
+}

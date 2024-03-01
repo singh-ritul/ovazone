@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main--bg--color:rgb(225, 225, 225);
+    
+}
+
+.btn:hover{
+    color: rgb(143, 227, 144);
+
+}
+.textcenter{
+    text-align: center;
+}
+
+.margin1{
+    margin: 5px 0px;
+}
+
+.button{
+    /* margin: 10px 32px; */
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 23px 10px 40px 50px;
+    text-align: justify;
+    
+}
+.button1{
+    margin: 10px 3px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.head{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
